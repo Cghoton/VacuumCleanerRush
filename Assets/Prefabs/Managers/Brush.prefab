@@ -49,7 +49,7 @@ MonoBehaviour:
   Player_2: {fileID: 0}
   Goal_1: {fileID: 0}
   Goal_2: {fileID: 0}
-  minDistanceToObject: 1
+  minDistanceToObject: 0.5
   minDistance: 0.1
   Player1Color: {r: 0.28235295, g: 0.73333335, b: 0.28235295, a: 1}
   Player2Color: {r: 1, g: 0.8235295, b: 0.41176474, a: 1}

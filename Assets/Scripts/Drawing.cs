@@ -21,7 +21,7 @@ public class Drawing : MonoBehaviour
 
     [SerializeField]
     [Header("Distance from Cursor to Player")]
-    private float minDistanceToObject = 0.5f;
+    private float minDistanceToObject = 0.2f;
 
     [SerializeField]
     [Header("Smoothness of Line")]

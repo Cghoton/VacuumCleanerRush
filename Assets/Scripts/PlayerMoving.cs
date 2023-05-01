@@ -57,6 +57,7 @@ public class PlayerMoving : MonoBehaviour
         }
         gameController.GoalReached();
     }
+
     private float CalculateLineDistance()
     {
         float Distance = 0;

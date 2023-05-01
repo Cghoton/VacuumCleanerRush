@@ -242,15 +242,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5004540481201310546, guid: 60a299464907c7b45a9610f8968ab4a7, type: 3}
       propertyPath: m_Color.b
-      value: 0.8962264
+      value: 0.31990921
       objectReference: {fileID: 0}
     - target: {fileID: 5004540481201310546, guid: 60a299464907c7b45a9610f8968ab4a7, type: 3}
       propertyPath: m_Color.g
-      value: 0.5808523
+      value: 0.72792566
       objectReference: {fileID: 0}
     - target: {fileID: 5004540481201310546, guid: 60a299464907c7b45a9610f8968ab4a7, type: 3}
       propertyPath: m_Color.r
-      value: 0.35933605
+      value: 0.745283
       objectReference: {fileID: 0}
     - target: {fileID: 5004540481201310547, guid: 60a299464907c7b45a9610f8968ab4a7, type: 3}
       propertyPath: m_RootOrder
@@ -411,11 +411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 77177072506822567, guid: 3611ffc39316ad54e9c19dbe21df8840, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.44
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 77177072506822567, guid: 3611ffc39316ad54e9c19dbe21df8840, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.18
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 77177072506822567, guid: 3611ffc39316ad54e9c19dbe21df8840, type: 3}
       propertyPath: m_LocalPosition.z
@@ -464,11 +464,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1139203829894518176, guid: c85f8979d58f1714cb4acdc3a9d05983, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.74
+      value: 1.75
       objectReference: {fileID: 0}
     - target: {fileID: 1139203829894518176, guid: c85f8979d58f1714cb4acdc3a9d05983, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.46
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1139203829894518176, guid: c85f8979d58f1714cb4acdc3a9d05983, type: 3}
       propertyPath: m_LocalPosition.z
@@ -541,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 13741171}
     - target: {fileID: 1932222431004574788, guid: 4441345e40ab2e745b408fac82d19c1c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1932222431004574788, guid: 4441345e40ab2e745b408fac82d19c1c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -598,11 +598,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4447675241520880064, guid: 454e2d65a6feedf4c99577c22f083c58, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.55
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4447675241520880064, guid: 454e2d65a6feedf4c99577c22f083c58, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.45
+      value: -3.47
       objectReference: {fileID: 0}
     - target: {fileID: 4447675241520880064, guid: 454e2d65a6feedf4c99577c22f083c58, type: 3}
       propertyPath: m_LocalPosition.z
@@ -752,11 +752,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6866643412006740156, guid: 75c7f38ced2b1864fa0da653680387e7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.29
+      value: -1.52
       objectReference: {fileID: 0}
     - target: {fileID: 6866643412006740156, guid: 75c7f38ced2b1864fa0da653680387e7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.07
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 6866643412006740156, guid: 75c7f38ced2b1864fa0da653680387e7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -890,6 +890,10 @@ PrefabInstance:
     - target: {fileID: 6944071437924776509, guid: fcebdec52fbe6714aba389adc2da531e, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510749539161016046, guid: fcebdec52fbe6714aba389adc2da531e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcebdec52fbe6714aba389adc2da531e, type: 3}

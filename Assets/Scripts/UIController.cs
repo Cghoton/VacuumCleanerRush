@@ -38,4 +38,8 @@ public class UIController : MonoBehaviour
     {
         Application.Quit();
     }
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
