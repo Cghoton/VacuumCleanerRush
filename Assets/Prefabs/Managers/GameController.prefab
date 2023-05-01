@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1932222431004574786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932222431004574788}
+  - component: {fileID: 1932222431004574787}
+  - component: {fileID: 1932222431004574789}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1932222431004574788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932222431004574786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3606424, y: 2.5233004, z: -0.07806073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1932222431004574787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932222431004574786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8356b21303d0360459a7f282bbdabfd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uIController: {fileID: 0}
+  soundController: {fileID: 1932222431004574789}
+--- !u!114 &1932222431004574789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932222431004574786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 278497ad2ceb0704c99a57e9e0b44608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: StartWuum
+    clip: {fileID: 8300000, guid: ff448abbbdd5d7a418fb692a02b3b514, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: LongWuum
+    clip: {fileID: 8300000, guid: 1de939e082446ac498a43ece6688e897, type: 3}
+    loop: 1
+    volume: 0.635
+    pitch: 1
+    source: {fileID: 0}
+  - name: Signal
+    clip: {fileID: 8300000, guid: 0ba73977a72c9d2459736496f5fbd0b5, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 0.852
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: 2af69ec48af35f142ae69ccd5b3808ea, type: 3}
+    loop: 0
+    volume: 0.704
+    pitch: 0.715
+    source: {fileID: 0}
