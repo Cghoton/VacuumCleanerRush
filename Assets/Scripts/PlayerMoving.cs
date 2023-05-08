@@ -22,10 +22,12 @@ public class PlayerMoving : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!Crash)
+        if (!Crash && (other.CompareTag("Smash") || other.GetComponent<PlayerMoving>() != null))
+        {
         Crash = true;
         Destroy(Instantiate(explosionPrefab, transform.position, explosionPrefab.transform.rotation),1f);
         gameController.Crashed();
+        }
     }
 
     public void StartMoving(List<Vector2> points)

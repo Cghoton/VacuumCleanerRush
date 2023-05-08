@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class CameraScaling : MonoBehaviour
 {
-    public float baseScreenWidth = 720f;
-    public float baseScreenHeight = 1280f;
-
-
-    [SerializeField] private float targetWidth = 1080f;
-    [SerializeField] private float pixelsPerUnit = 100f;
-
     [SerializeField]
     private GameObject BackGround;
 
@@ -33,17 +26,29 @@ public class CameraScaling : MonoBehaviour
     private void ScalingCamera()
     {
         float targetAspect = 16f / 9f; // The desired aspect ratio
-        float targetHeight = 10f; // The desired vertical size of the camera's view
+        float targetHeight = 5.7f; // The desired vertical size of the camera's view
         float currentAspect = Screen.width * 1.0f / Screen.height;
+        float backgroundWidth = BackGround.GetComponent<Renderer>().bounds.size.x;
+        float backgroundHeight = BackGround.GetComponent<Renderer>().bounds.size.y;
+
+        float targetWidth = targetHeight * targetAspect;
+        float backgroundRatio = backgroundWidth / backgroundHeight;
 
         if (currentAspect > targetAspect)
         {
-            mainCamera.orthographicSize = targetHeight / 2f;
+            float viewWidth = targetHeight * currentAspect;
+            float scaleFactor = backgroundWidth / viewWidth;
+            mainCamera.orthographicSize = targetHeight / 2f / scaleFactor;
         }
         else
         {
-            mainCamera.orthographicSize = (targetHeight / currentAspect) / 2f;
+            float viewHeight = targetWidth / currentAspect;
+            float scaleFactor = backgroundHeight / viewHeight;
+            mainCamera.orthographicSize = (targetWidth / currentAspect) / 2f / scaleFactor;
         }
+
     }
 }
+
+
 

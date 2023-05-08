@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8408248425353757250}
   m_Layer: 0
   m_Name: CrachChair
-  m_TagString: Untagged
+  m_TagString: Smash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 00e345dc77b15624588360c7efc664cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 012f21ebc86fd9a48ac4f5a837820d5a, type: 3}
   m_Color: {r: 1, g: 0.33490568, b: 0.40116832, a: 0.6509804}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,16 +98,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.008331716, y: -0.004760951}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.99, y: 0.99}
+    oldSize: {x: 0.96, y: 0.96}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8833567, y: 0.8762153}
   m_EdgeRadius: 0
