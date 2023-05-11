@@ -42,4 +42,12 @@ public class UIController : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    public void Continue()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void LevelSwitchMenu()
+    {
+       SceneManager.LoadScene(1);
+    }
 }

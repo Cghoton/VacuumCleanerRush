@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: f9450bad56dca7f48bb9079f2d7a375f
   - enabled: 1
+    path: Assets/Scenes/LevelSwitcher.unity
+    guid: 5e0f4c2234427d2429969a99384fb81b
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -21,9 +24,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: 651eeeae88397af4099e2bb75e574cbd
   - enabled: 1
-    path: Assets/Scenes/Level7.unity
+    path: Assets/Scenes/Level4.unity
+    guid: 157daba31fe3aff4e94386b73e6bd04f
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 45304098b005d4f4d9982599334e4ccc
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
     guid: 3f4e9610ea0782244802ccea75b6894f
-  - enabled: 0
-    path: Assets/Scenes/ApkPreview.unity
-    guid: 2fcf1c8b0fdd7cf4ab5cc551df8eee9f
   m_configObjects: {}
