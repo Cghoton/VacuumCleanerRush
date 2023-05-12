@@ -2,17 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveController : MonoBehaviour
+public static class SaveController
 {
-    // Start is called before the first frame update
-    void Start()
+    private const string LevelsOpened = "LevelsOpened";
+    static SaveController()
     {
-        
+        if (!PlayerPrefs.HasKey(LevelsOpened))
+        {
+            PlayerPrefs.SetInt(LevelsOpened, 1);
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    public static void PlayingForFirstTime()
     {
-        
+        PlayerPrefs.SetInt(LevelsOpened, 1);
+    }
+    public static int GetInt(string key)
+    {
+        return PlayerPrefs.GetInt(LevelsOpened);
+    }
+    public static void SetInt(string key, int value)
+    {
+        PlayerPrefs.SetInt(key, value);
     }
 }

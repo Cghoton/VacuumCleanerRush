@@ -11,7 +11,7 @@ public class LevelSwitchController : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0 ; i < PlayerPrefs.GetInt("LevelsCompleted"); i++)
+        for (int i = 0 ; i < SaveController.GetInt("LevelsOpened"); i++)
         {
             Color tmp = levelButtons[i].GetComponent<RawImage>().color;
             tmp.a = 1f;

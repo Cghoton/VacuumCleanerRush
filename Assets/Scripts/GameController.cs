@@ -24,8 +24,8 @@ public class GameController : MonoBehaviour
     {
         soundController.Pause("LongWuum");
         soundController.Play("Signal");
+        SaveController.SetInt("LevelsOpened", SceneManager.GetActiveScene().buildIndex);
         uIController.AnnounceWin();
-        PlayerPrefs.SetInt("LevelsCompleted", SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void GoalReached()
