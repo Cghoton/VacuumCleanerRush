@@ -1173,7 +1173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6667750974967938942, guid: 27bf12feee08a5b49a5592a92fbba65e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.49
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 6667750974967938942, guid: 27bf12feee08a5b49a5592a92fbba65e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2191,7 +2191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6667750974967938942, guid: 27bf12feee08a5b49a5592a92fbba65e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.03
+      value: 5.86
       objectReference: {fileID: 0}
     - target: {fileID: 6667750974967938942, guid: 27bf12feee08a5b49a5592a92fbba65e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2837,7 +2837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7510749539161016046, guid: fcebdec52fbe6714aba389adc2da531e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextLevel
+      value: GoToMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcebdec52fbe6714aba389adc2da531e, type: 3}

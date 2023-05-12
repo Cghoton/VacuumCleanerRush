@@ -24,9 +24,9 @@ public class PlayerMoving : MonoBehaviour
     {
         if (!Crash && (other.CompareTag("Smash") || other.GetComponent<PlayerMoving>() != null))
         {
-        Crash = true;
-        Destroy(Instantiate(explosionPrefab, transform.position, explosionPrefab.transform.rotation),1f);
-        gameController.Crashed();
+            Crash = true;
+            Destroy(Instantiate(explosionPrefab, transform.position, explosionPrefab.transform.rotation),1f);
+            gameController.Crashed();
         }
     }
 

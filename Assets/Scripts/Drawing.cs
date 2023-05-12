@@ -21,7 +21,11 @@ public class Drawing : MonoBehaviour
 
     [SerializeField]
     [Header("Distance from Cursor to Player")]
-    private float minDistanceToObject = 0.2f;
+    private float minDistanceToPlayer = 0.5f;
+
+    [SerializeField]
+    [Header("Distance from Cursor to Goal")]
+    private float minDistanceToGoal = 0.7f;
 
     [SerializeField]
     [Header("Smoothness of Line")]
@@ -109,12 +113,12 @@ public class Drawing : MonoBehaviour
 
     private bool HitPlayer()
     {
-        if(Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), Player_1.position) < minDistanceToObject)
+        if(Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), Player_1.position) < minDistanceToPlayer)
         {
             route_1.Clear();
             return ConfirmLine(PaintedLine_1, Player1Color);
         }
-        else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), Player_2.position) < minDistanceToObject)
+        else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), Player_2.position) < minDistanceToPlayer)
         {
             route_2.Clear();
             return ConfirmLine(PaintedLine_2, Player2Color);
@@ -129,13 +133,17 @@ public class Drawing : MonoBehaviour
     {
         if (PlayerMatchesGoal(Goal_1, Player1Color))
         {
+            currentLine.SetPosition(currentLine.positionCount - 1, Goal_1.position);
             route_1.AddRange(RouteToGoal);
+            route_1[^1] = Goal_1.position;
             PaintedLine_1 = currentInstance;
             return true;
         }
         else if (PlayerMatchesGoal(Goal_2, Player2Color))
         {
+            currentLine.SetPosition(currentLine.positionCount - 1, Goal_2.position);
             route_2.AddRange(RouteToGoal);
+            route_2[^1] = Goal_2.position;
             PaintedLine_2 = currentInstance;
             return true;
         }
@@ -154,7 +162,7 @@ public class Drawing : MonoBehaviour
 
     private bool PlayerMatchesGoal(Transform lineToMatch, Color color)
     {
-        return Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), lineToMatch.position) < minDistanceToObject && currentInstance.GetComponent<Renderer>().material.color == color;
+        return Vector2.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), lineToMatch.position) < minDistanceToGoal && currentInstance.GetComponent<Renderer>().material.color == color;
     }
 
     private void MissedPlayerOrGoal()
